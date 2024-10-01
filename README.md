@@ -1,36 +1,33 @@
-Projeto de Automação de Testes com Cypress
-Este projeto é uma automação de testes de um site de gerenciamento de tarefas utilizando Cypress e Mochawesome para relatórios. Ele realiza uma série de cenários, incluindo a inserção, validação e conclusão de tarefas, utilizando o site TodoMVC - Riot.js.
+Projeto de Automação de Testes com Cypress<br>
+Este projeto é uma automação de testes de um site de gerenciamento de tarefas utilizando Cypress e Mochawesome para relatórios. Ele realiza uma série de cenários, incluindo a inserção, validação e conclusão de tarefas, utilizando o site TodoMVC - Riot.js.<br>
 
-Estrutura de Pastas
-bash
-Copiar código
-cypress/
-  ├── e2e/                 # Arquivos dos testes e2e
-  │   └── teste.cy.js       # Arquivo com os cenários de testes
-  └── reports/              # Pasta onde os relatórios JSON e HTML são gerados
+Estrutura de Pastas<br>
+<br>
+cypress/<br>
+  ├── e2e/                 # Arquivos dos testes e2e<br>
+  │   └── teste.cy.js       # Arquivo com os cenários de testes<br>
+  └── reports/              # Pasta onde os relatórios JSON e HTML são gerados<br>
 
-Tecnologias Utilizadas
-Cypress - Framework de testes end-to-end
-Mochawesome - Geração de relatórios de teste
-Mochawesome-merge - Mesclagem de relatórios
-Mochawesome-report-generator - Gerador de relatórios em HTML
-Pré-requisitos
-Node.js (versão 14 ou superior)
-NPM (ou Yarn)
-Cypress (versão 12.0.0 ou superior)
-Instalação
-Clone este repositório:
+Tecnologias Utilizadas<br>
+Cypress - Framework de testes end-to-end<br>
+Mochawesome - Geração de relatórios de teste<br>
+Mochawesome-merge - Mesclagem de relatórios<br>
+Mochawesome-report-generator - Gerador de relatórios em HTML<br>
 
+Pré-requisitos<br>
+Node.js (versão 14 ou superior)<br>
+NPM (ou Yarn)<br>
+Cypress (versão 12.0.0 ou superior)<br>
 
-Cenários de Testes
-Abrir o site
-Inserir uma tarefa
-Validar a tarefa inserida
-Marcar a tarefa como concluída
-Abrir a aba de tarefas concluídas
-Validar tarefa na aba concluída
-Limpar tarefas concluídas
-Os testes complementam-se entre si, então as ações executadas nos testes anteriores são aproveitadas pelos subsequentes.
+Instalação<br>
+Clone este repositório:<br>
 
-Relatórios de Testes
-Os relatórios dos testes são gerados utilizando Mochawesome.
+Cenários de Testes<br>
+Abrir o site<br>
+Inserir uma tarefa<br>
+Validar a tarefa inserida<br>
+Marcar a tarefa como concluída<br>
+Abrir a aba de tarefas concluídas<br>
+Validar tarefa na aba concluída<br>
+Limpar tarefas concluídas<br>
+Os testes complementam-se entre si, então as ações executadas nos testes anter
