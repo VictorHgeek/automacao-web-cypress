@@ -1,0 +1,205 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 5,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-09-30T01:49:50.211Z",
+    "end": "2024-09-30T01:50:01.972Z",
+    "duration": 11761,
+    "testsRegistered": 6,
+    "passPercent": 83.33333333333334,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cc9b582e-456c-479c-a829-702f388dae82",
+      "title": "",
+      "fullFile": "cypress\\e2e\\teste.cy.js",
+      "file": "cypress\\e2e\\teste.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "25f7c2b7-dbf1-4714-b58b-0a5ab3bc208c",
+          "title": "Automação de Cenários com Cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve inserir uma tarefa",
+              "fullTitle": "Automação de Cenários com Cypress Deve inserir uma tarefa",
+              "timedOut": null,
+              "duration": 2571,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input.new-todo').type('Inserindo tarefa para teste{enter}');",
+              "err": {},
+              "uuid": "7b85d2d6-333d-44df-b536-23ee1b693621",
+              "parentUUID": "25f7c2b7-dbf1-4714-b58b-0a5ab3bc208c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve validar a tarefa inserida",
+              "fullTitle": "Automação de Cenários com Cypress Deve validar a tarefa inserida",
+              "timedOut": null,
+              "duration": 4856,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('ul.todo-list liii').first().find('label').should('contain.text', 'Inserindo tarefa para teste');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `ul.todo-list liii`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `ul.todo-list liii`, but never found it.\n    at Context.eval (webpack://automacao-web-cypress/./cypress/e2e/teste.cy.js:14:9)",
+                "diff": null
+              },
+              "uuid": "89f32403-63ea-4f6f-a74c-5bbe34cfbf00",
+              "parentUUID": "25f7c2b7-dbf1-4714-b58b-0a5ab3bc208c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve marcar a tarefa como concluída",
+              "fullTitle": "Automação de Cenários com Cypress Deve marcar a tarefa como concluída",
+              "timedOut": null,
+              "duration": 148,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('ul.todo-list li').first().find('input.toggle').click();",
+              "err": {},
+              "uuid": "5ff49699-5553-4aab-bf2b-e716aef1d31a",
+              "parentUUID": "25f7c2b7-dbf1-4714-b58b-0a5ab3bc208c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve abrir a aba Completed",
+              "fullTitle": "Automação de Cenários com Cypress Deve abrir a aba Completed",
+              "timedOut": null,
+              "duration": 120,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href=\"#/completed\"]').click();",
+              "err": {},
+              "uuid": "b687ff91-ecb8-4d3f-85e6-88f4965b9246",
+              "parentUUID": "25f7c2b7-dbf1-4714-b58b-0a5ab3bc208c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve validar a tarefa na aba Completed",
+              "fullTitle": "Automação de Cenários com Cypress Deve validar a tarefa na aba Completed",
+              "timedOut": null,
+              "duration": 50,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('ul.todo-list li').first().find('label').should('contain.text', 'Inserindo tarefa para teste');",
+              "err": {},
+              "uuid": "bd6d34d7-1649-4bc3-ba1e-2b8457734b5f",
+              "parentUUID": "25f7c2b7-dbf1-4714-b58b-0a5ab3bc208c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve limpar a aba Completed",
+              "fullTitle": "Automação de Cenários com Cypress Deve limpar a aba Completed",
+              "timedOut": null,
+              "duration": 119,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('button.clear-completed').click();",
+              "err": {},
+              "uuid": "b0bbac69-97f9-4712-b125-f052fa4f6fff",
+              "parentUUID": "25f7c2b7-dbf1-4714-b58b-0a5ab3bc208c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7b85d2d6-333d-44df-b536-23ee1b693621",
+            "5ff49699-5553-4aab-bf2b-e716aef1d31a",
+            "b687ff91-ecb8-4d3f-85e6-88f4965b9246",
+            "bd6d34d7-1649-4bc3-ba1e-2b8457734b5f",
+            "b0bbac69-97f9-4712-b125-f052fa4f6fff"
+          ],
+          "failures": [
+            "89f32403-63ea-4f6f-a74c-5bbe34cfbf00"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7864,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

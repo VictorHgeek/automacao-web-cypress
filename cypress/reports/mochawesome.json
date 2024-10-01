@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-09-30T01:35:27.157Z",
+    "end": "2024-09-30T01:35:31.729Z",
+    "duration": 4572,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0ab86a04-299c-48ae-a99a-4c939b924c40",
+      "title": "",
+      "fullFile": "cypress\\e2e\\teste.cy.js",
+      "file": "cypress\\e2e\\teste.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fd76b5c1-1a35-4886-8bb2-b3f4776f4c97",
+          "title": "Automação de Cenários com Cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve inserir uma tarefa",
+              "fullTitle": "Automação de Cenários com Cypress Deve inserir uma tarefa",
+              "timedOut": null,
+              "duration": 1607,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Cenário 2: Inserir uma tarefa\ncy.get('input.new-todo').type('Inserindo tarefa para teste{enter}');",
+              "err": {},
+              "uuid": "96b5d670-029a-4e15-bc92-01fb1e6303ff",
+              "parentUUID": "fd76b5c1-1a35-4886-8bb2-b3f4776f4c97",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve validar a tarefa inserida",
+              "fullTitle": "Automação de Cenários com Cypress Deve validar a tarefa inserida",
+              "timedOut": null,
+              "duration": 79,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Cenário 3: Validar a tarefa inserida\ncy.get('ul.todo-list li').first().find('label').should('contain.text', 'Inserindo tarefa para teste');",
+              "err": {},
+              "uuid": "7ad7edd6-5ddb-4054-8664-c6dd41803441",
+              "parentUUID": "fd76b5c1-1a35-4886-8bb2-b3f4776f4c97",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve marcar a tarefa como concluída",
+              "fullTitle": "Automação de Cenários com Cypress Deve marcar a tarefa como concluída",
+              "timedOut": null,
+              "duration": 136,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Cenário 4: Check na tarefa\ncy.get('ul.todo-list li').first().find('input.toggle').click();",
+              "err": {},
+              "uuid": "bcbd20e2-f7a0-402a-8b2e-2f14d4d76c1a",
+              "parentUUID": "fd76b5c1-1a35-4886-8bb2-b3f4776f4c97",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve abrir a aba Completed",
+              "fullTitle": "Automação de Cenários com Cypress Deve abrir a aba Completed",
+              "timedOut": null,
+              "duration": 102,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Cenário 5: Abrir aba Completed\ncy.get('a[href=\"#/completed\"]').click();",
+              "err": {},
+              "uuid": "e7faf45a-f9d2-49e5-8b1d-ab12f0b12fb6",
+              "parentUUID": "fd76b5c1-1a35-4886-8bb2-b3f4776f4c97",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve validar a tarefa na aba Completed",
+              "fullTitle": "Automação de Cenários com Cypress Deve validar a tarefa na aba Completed",
+              "timedOut": null,
+              "duration": 66,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Cenário 6: Validar tarefa na aba Completed\ncy.get('ul.todo-list li').first().find('label').should('contain.text', 'Inserindo tarefa para teste');",
+              "err": {},
+              "uuid": "add80b0a-20b4-4b7d-9e21-93153cc622f4",
+              "parentUUID": "fd76b5c1-1a35-4886-8bb2-b3f4776f4c97",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve limpar a aba Completed",
+              "fullTitle": "Automação de Cenários com Cypress Deve limpar a aba Completed",
+              "timedOut": null,
+              "duration": 102,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Cenário 7: Limpar a aba Completed\ncy.get('button.clear-completed').click();",
+              "err": {},
+              "uuid": "1a0dc75d-5360-4949-ae9e-341333f9df8b",
+              "parentUUID": "fd76b5c1-1a35-4886-8bb2-b3f4776f4c97",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "96b5d670-029a-4e15-bc92-01fb1e6303ff",
+            "7ad7edd6-5ddb-4054-8664-c6dd41803441",
+            "bcbd20e2-f7a0-402a-8b2e-2f14d4d76c1a",
+            "e7faf45a-f9d2-49e5-8b1d-ab12f0b12fb6",
+            "add80b0a-20b4-4b7d-9e21-93153cc622f4",
+            "1a0dc75d-5360-4949-ae9e-341333f9df8b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2092,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
