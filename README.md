@@ -30,4 +30,4 @@ Marcar a tarefa como concluída<br>
 Abrir a aba de tarefas concluídas<br>
 Validar tarefa na aba concluída<br>
 Limpar tarefas concluídas<br>
-Os testes complementam-se entre si, então as ações executadas nos testes anter
+Os testes complementam-se entre si, dependendo poderá ser necessário utilizar o cypress.config para atender sua necessidade de visualização.
